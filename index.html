@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gradient Generator</title>
+</head>
+<body>
+
+    <div class="generator-container">
+        <form>
+            <div class="color color1">
+                <input id="color1" type="color">
+                <p class="color-info"></p>
+            </div>
+            <div class="color color2">
+                <input id="color2" type="color">
+                <p class="color-info"></p>
+            </div>
+            <p>Orientation: <output id="angle">180°</output></p>
+            <input id="gradient-orientation" type="range" min="0" max="360" value="180">
+            <div class="btn-container">
+                <button id="copier" type="button">Copier</button>
+                <button id="random" type="button">Random</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

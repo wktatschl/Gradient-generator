@@ -1,0 +1,103 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.color {
+    border: 1px solid whitesmoke;
+    margin: 5px 0;
+    font-size: .75em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.color input[type="color"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.color p.color-info {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 15px;
+    position: relative;
+}
+
+button {
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: .75em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.generator-container {
+    width: 250px;
+    margin: 200px auto;
+}
+
+p {
+    font-size: .75em;
+    background-color: whitesmoke;
+    padding: 6px;
+    display: inline-block;
+    margin: 15px 0 5px 0;
+    border-radius: 3px;
+}
+
+#gradient-orientation {
+    height: 5px;
+    margin-top: 5px;
+}
+
+.copied-message {
+    font-size: .75em;
+    position: absolute;
+    bottom: -40%;
+    left: 12%;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
